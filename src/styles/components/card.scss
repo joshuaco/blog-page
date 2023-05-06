@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px 0;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(27, 91, 100, 0.25);
+}
+
+.card header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px 0;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+  color: var(--color-black-pearl-900);
+}
+
+//TODO: Paragraph/SM/Regular
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-black-pearl-700);
+}
+
+.card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  gap: 0 12px;
+  align-items: center;
+}
+
+//TODO: Paragraph/XS/Bold
+.author span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--color-black-pearl-900);
+}
+
+.author img {
+  width: 100%;
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 50%;
+}
+
+//TODO: Paragraph/XS/Regular
+.reading-time {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--color-black-pearl-700);
+}

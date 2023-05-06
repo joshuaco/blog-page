@@ -19,7 +19,7 @@
 .post-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 560px 430px;
+  grid-auto-rows: 460px 330px;
   gap: 80px 24px;
 }
 

@@ -12,7 +12,8 @@ body {
   @include tools.container-width;
 }
 
-header {
+//TODO: Move to objects file
+.main-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,4 +27,9 @@ main {
   flex-direction: column;
 
   @include tools.container-width;
+}
+
+// TODO: Move to reset files
+a {
+  text-decoration: none;
 }
