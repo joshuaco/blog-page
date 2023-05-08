@@ -1,7 +1,7 @@
 @use "settings"; // Variables
 @use "tools"; // mixins
-@use "generic";
-@use "elements"; // Predefined styles
-@use "objects"; // Containers
-@use "components";
+@use "generic"; // Resets
+@use "elements"; // Predefined styles (body, main, etc.)
+@use "objects"; // Containers - layout (no colors)
+@use "components"; // Design
 
