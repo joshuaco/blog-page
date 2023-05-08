@@ -1,3 +1,5 @@
+@use "tools";
+
 .nav-list {
   display: flex;
   justify-content: space-evenly;
@@ -14,20 +16,41 @@
   display: flex;
   flex-direction: column;
   gap: 48px 0;
+  padding: 0 24px;
+
+  @include tools.desktop {
+    padding: 0;
+  }
 }
 
 .post-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 460px 330px;
-  gap: 80px 24px;
+  gap: 32px 0;
+
+  @include tools.desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 460px 330px;
+    gap: 80px 24px;
+  }
 }
 
 .post-list article:nth-child(4n) {
-  grid-column: 1 / 4;
   background-color: var(--color-aquarius-100);
+
+  @include tools.desktop {
+    grid-column: 1 / 4;
+  }
 }
 
 .post-list article {
   background-color: var(--color-white);
+}
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19.5px 0;
+  
+  @include tools.container-width;
 }

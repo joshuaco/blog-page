@@ -12,24 +12,9 @@ body {
   @include tools.container-width;
 }
 
-//TODO: Move to objects file
-.main-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 19.5px 0;
-  
-  @include tools.container-width;
-}
-
 main {
   display: flex;
   flex-direction: column;
 
   @include tools.container-width;
-}
-
-// TODO: Move to reset files
-a {
-  text-decoration: none;
 }
