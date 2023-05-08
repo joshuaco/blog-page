@@ -1,5 +1,7 @@
 # Readme
 
+## Blog creado usando SASS y la metodología ITCSS para abordar diseños escalables y mantenibles.
+
 ## ¿Cómo abordar un proyecto?
 
 1. **Analizar la necesidad del proyecto**: Revisar si el proyecto cumple con las necesidades del usuario, preguntarse quién lo va a usar y cómo lo va a usar.
