@@ -1,0 +1,16 @@
+.input {
+  padding: 12px;
+  height: 48px;
+  color: var(--color-black-pearl-700);
+  background-color: var(--color-black-pearl-100);
+  border-radius: 2px;
+  border: 1px solid transparent;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+input::placeholder {
+  color: var(--color-black-pearl-400);
+}

@@ -7,12 +7,6 @@
   gap: 24px;
 }
 
-//TODO: Move to component (?)
-.tags-filter {
-  display: flex;
-  justify-content: space-between;
-}
-
 .post-list-container {
   display: flex;
   flex-direction: column;
@@ -23,6 +17,13 @@
     padding: 0;
   }
 }
+//TODO: Move to component (?)
+.tags-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .post-list {
   display: grid;
