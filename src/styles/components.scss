@@ -1,6 +1,13 @@
-@use "components/card.scss";
-@use "components/tag.scss";
+// Atoms
 @use "components/heading.scss";
 @use "components/paragraph.scss";
-@use "components/avatar.scss";
+@use "components/link.scss";
 @use "components/picture.scss";
+@use "components/avatar.scss";
+
+// Molecules
+@use "components/tag.scss";
+@use "components/button.scss";
+
+// Organisms
+@use "components/card.scss";
