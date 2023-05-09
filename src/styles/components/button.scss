@@ -1,0 +1,44 @@
+.button {
+  // se pueda ubicar al lado de otros botones
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 2px;
+
+  border: 1px solid transparent;
+  gap: 8px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-aquarius-50);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.button-primary {
+  background-color: var(--color-aquarius-600);
+
+  &:hover {
+    background-color: var(--color-aquarius-700);
+    box-shadow: 0 6px 10px rgba(44, 159, 175, 0.17);
+  }
+
+  &:disabled {
+    background-color: var(--color-aquarius-200);
+  }
+}
+
+.button-secondary {
+  background-color: var(--color-black-pearl-900);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-black-pearl-800);
+    box-shadow: 0 6px 10px rgba(27, 38, 44, 0.16);
+  }
+
+  &:disabled {
+    background-color: var(--color-black-pearl-200);
+  }
+}
