@@ -3,27 +3,20 @@
 .nav-list {
   display: flex;
   align-items: baseline; // typography center 
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 24px;
+  width: 100%;
 }
 
 .post-list-container {
   display: flex;
   flex-direction: column;
   gap: 48px 0;
-  padding: 0 24px;
 
   @include tools.desktop {
     padding: 0;
   }
 }
-//TODO: Move to component (?)
-.tags-filter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 
 .post-list {
   display: grid;
@@ -39,8 +32,12 @@
 .main-navbar {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 19.5px 0;
+  padding: 20px 0;
   
   @include tools.container-width;
+  @include tools.desktop {
+    flex-direction: row;
+  }
 }

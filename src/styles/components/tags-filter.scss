@@ -1,0 +1,30 @@
+@use '../tools.scss';
+
+.tags-filter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px 0;
+
+  @include tools.desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.filter {
+  white-space: nowrap;
+}
+
+.tags-filter .filter-list {
+  @include tools.desktop {
+    gap: 32px;
+  }
+}
+
+.is-active-filter .filter {
+  background-color: var(--color-black-pearl-900);
+  color: var(--color-aquarius-50);
+  padding: 8px 12px;
+  border-radius: 2px;
+}
