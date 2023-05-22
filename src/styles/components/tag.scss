@@ -1,6 +1,5 @@
 .tag {
   padding: 8px;
-  background-color: var(--color-aquarius-100);
   border-radius: 2px;
   font-weight: 400;
   font-size: 13px;
@@ -9,4 +8,12 @@
 
 .tag a {
   color: var(--color-aquarius-900);
+}
+
+.tag-primary {
+  background-color: var(--color-aquarius-100);
+}
+
+.tag-secondary {
+  background-color: var(--color-morrocan-blue-100);
 }
