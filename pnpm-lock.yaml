@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  dayjs:
+    specifier: ^1.11.7
+    version: 1.11.7
+
 devDependencies:
   sass:
     specifier: ^1.62.1
@@ -242,6 +247,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /dayjs@1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /esbuild@0.17.18:
     resolution: {integrity: sha512-z1lix43jBs6UKjcZVKOw2xx69ffE2aG0PygLL5qJ9OS/gy0Ewd1gW/PUQIOIQGXBHWNywSc0floSKoMFF8aK2w==}

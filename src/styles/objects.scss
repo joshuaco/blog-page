@@ -1,13 +1,14 @@
-@use "tools";
+@use 'tools';
 
 .main-container {
-  @include tools.container-width;
   padding: var(--container-padding);
+
+  @include tools.container-width;
 }
 
 .nav-list {
   display: flex;
-  align-items: baseline; // typography center 
+  align-items: baseline; // typography center
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 24px;
@@ -41,7 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0;
-  
+
   @include tools.container-width;
   @include tools.desktop {
     flex-direction: row;
@@ -56,7 +57,7 @@
   gap: 24px 0;
 }
 
-// NOTE: container queries possible case 
+// NOTE: container queries possible case
 .featured-posts article {
   height: 530px;
   width: 100%;
