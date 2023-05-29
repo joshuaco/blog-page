@@ -10,102 +10,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <!-- Vite converts SCSS to CSS -->
   <link rel="stylesheet" href="src/styles/main.scss">
+  <script src="src/scripts/main.js" defer></script>
   <title>Radtek | News & Technology</title>
 </head>
 
 <body>
-  <header class="main-navbar">
-    <img src="src/images/logos/logo.png" alt="Logo" width="150">
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#" class="text-button text-button-md font-bold is-active">Inicio</a></li>
-        <li><a href="#">Suscribirse</a></li>
-        <li><button class="button button-primary">Iniciar Sesión</button></li>
-        <li><button class="button button-secondary">Discord</button></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="featured-posts">
-      <h1>Featured Posts</h1>
-    </section>
-    <section class="post-list-container">
-      <nav class="tags-filter">
-        <ul class="nav-list filter-list">
-          <li class="is-active-filter"><a class="filter paragraph paragraph-sm font-bold" href="#">Todos</a></li>
-          <li><a class="filter paragraph paragraph-sm font-bold" href="#">HTML</a></li>
-          <li><a class="filter paragraph paragraph-sm font-bold" href="#">CSS</a></li>
-          <li><a class="filter paragraph paragraph-sm font-bold" href="#">JavaScript</a></li>
-          <li><a class="filter paragraph paragraph-sm font-bold" href="#">Web components</a></li>
-          <li><a class="filter paragraph paragraph-sm font-bold" href="#">Sistemas de diseño</a></li>
+  <div class="main-container">
+    <header class="main-navbar">
+      <img src="src/images/logos/logo.png" alt="Logo" width="150">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#" class="text-button text-button-md font-bold is-active">Inicio</a></li>
+          <li><a href="#">Suscribirse</a></li>
+          <li><button class="button button-primary">Iniciar Sesión</button></li>
+          <li><button class="button button-secondary">Discord</button></li>
         </ul>
-        <input class="input" type="search" placeholder="Buscar">
       </nav>
-      <div class="post-list">
-        <article class="card">
-          <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </section>
-          <footer>
-            <div class="author">
-              <img src="https://i.pravatar.cc/300" alt="avatar autor">
-              <span class="paragraph-xs font-bold">Nombre del autor</span>
-            </div>
-            <span class="reading-time paragraph-xs font-regular">
-              7 min lectura
-            </span>
-          </footer>
-        </article>
-        <article class="card">
-          <img src="https://source.unsplash.com/random" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </section>
-          <footer>
-            <div class="author">
-              <img src="https://i.pravatar.cc/300" alt="avatar autor">
-              <span class="paragraph-xs font-bold">Nombre del autor</span>
-            </div>
-            <span class="reading-time paragraph-xs font-regular">
-              7 min lectura
-            </span>
-          </footer>
-        </article>
-        <article class="card">
-          <img src="https://source.unsplash.com/random" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+    </header>
+    <main>
+      <section class="featured-posts">
+        <article></article>
+        <div class="button-container">
+          <button>Atrás</button>
+          <button>Adelante</button>
+        </div>
+      </section>
+      <section class="post-list-container">
+        <nav class="tags-filter">
+          <ul class="nav-list filter-list">
+            <li class="is-active-filter"><a class="filter paragraph paragraph-sm font-bold" href="#">Todos</a></li>
+            <li><a class="filter paragraph paragraph-sm font-bold" href="#">HTML</a></li>
+            <li><a class="filter paragraph paragraph-sm font-bold" href="#">CSS</a></li>
+            <li><a class="filter paragraph paragraph-sm font-bold" href="#">JavaScript</a></li>
+            <li><a class="filter paragraph paragraph-sm font-bold" href="#">Web components</a></li>
+            <li><a class="filter paragraph paragraph-sm font-bold" href="#">Sistemas de diseño</a></li>
+          </ul>
+          <input class="input" type="search" placeholder="Buscar">
+        </nav>
+        <div class="post-list">
+          <article class="card">
+            <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </section>
             <footer>
               <div class="author">
                 <img src="https://i.pravatar.cc/300" alt="avatar autor">
@@ -115,22 +72,22 @@
                 7 min lectura
               </span>
             </footer>
-          </section>
-        </article>
-        <article class="card card-extended">
-          <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-secondary"><a href="#">Web components</a></span>
-                  <span class="tag tag-secondary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+          </article>
+          <article class="card">
+            <img src="https://source.unsplash.com/random" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </section>
             <footer>
               <div class="author">
                 <img src="https://i.pravatar.cc/300" alt="avatar autor">
@@ -140,72 +97,72 @@
                 7 min lectura
               </span>
             </footer>
-          </section>
-        </article>
-        <article class="card">
-          <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
+          </article>
+          <article class="card">
+            <img src="https://source.unsplash.com/random" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <footer>
+                <div class="author">
+                  <img src="https://i.pravatar.cc/300" alt="avatar autor">
+                  <span class="paragraph-xs font-bold">Nombre del autor</span>
                 </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </section>
-          <footer>
-            <div class="author">
-              <img src="https://i.pravatar.cc/300" alt="avatar autor">
-              <span class="paragraph-xs font-bold">Nombre del autor</span>
-            </div>
-            <span class="reading-time paragraph-xs font-regular">
-              7 min lectura
-            </span>
-          </footer>
-        </article>
-        <article class="card">
-          <img src="https://source.unsplash.com/random" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
+                <span class="reading-time paragraph-xs font-regular">
+                  7 min lectura
+                </span>
+              </footer>
+            </section>
+          </article>
+          <article class="card card-extended">
+            <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-secondary"><a href="#">Web components</a></span>
+                    <span class="tag tag-secondary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <footer>
+                <div class="author">
+                  <img src="https://i.pravatar.cc/300" alt="avatar autor">
+                  <span class="paragraph-xs font-bold">Nombre del autor</span>
                 </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </section>
-          <footer>
-            <div class="author">
-              <img src="https://i.pravatar.cc/300" alt="avatar autor">
-              <span class="paragraph-xs font-bold">Nombre del autor</span>
-            </div>
-            <span class="reading-time paragraph-xs font-regular">
-              7 min lectura
-            </span>
-          </footer>
-        </article>
-        <article class="card">
-          <img src="https://source.unsplash.com/random" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-primary"><a href="#">Web components</a></span>
-                  <span class="tag tag-primary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+                <span class="reading-time paragraph-xs font-regular">
+                  7 min lectura
+                </span>
+              </footer>
+            </section>
+          </article>
+          <article class="card">
+            <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </section>
             <footer>
               <div class="author">
                 <img src="https://i.pravatar.cc/300" alt="avatar autor">
@@ -215,22 +172,22 @@
                 7 min lectura
               </span>
             </footer>
-          </section>
-        </article>
-        <article class="card card-extended">
-          <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
-          <section>
-            <div class="card-content">
-              <header>
-                <div class="tags">
-                  <span class="tag tag-secondary"><a href="#">Web components</a></span>
-                  <span class="tag tag-secondary"><a href="#">CSS</a></span>
-                </div>
-                <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
-              </header>
-              <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
+          </article>
+          <article class="card">
+            <img src="https://source.unsplash.com/random" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </section>
             <footer>
               <div class="author">
                 <img src="https://i.pravatar.cc/300" alt="avatar autor">
@@ -240,13 +197,62 @@
                 7 min lectura
               </span>
             </footer>
-          </section>
-        </article>
-      </div>
-    </section>
-    <aside>Publicidad</aside>
-  </main>
-  <footer>Footer</footer>
+          </article>
+          <article class="card">
+            <img src="https://source.unsplash.com/random" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-primary"><a href="#">Web components</a></span>
+                    <span class="tag tag-primary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <footer>
+                <div class="author">
+                  <img src="https://i.pravatar.cc/300" alt="avatar autor">
+                  <span class="paragraph-xs font-bold">Nombre del autor</span>
+                </div>
+                <span class="reading-time paragraph-xs font-regular">
+                  7 min lectura
+                </span>
+              </footer>
+            </section>
+          </article>
+          <article class="card card-extended">
+            <img src="https://source.unsplash.com/VPkkplpaLLI" alt="Imagen post">
+            <section>
+              <div class="card-content">
+                <header>
+                  <div class="tags">
+                    <span class="tag tag-secondary"><a href="#">Web components</a></span>
+                    <span class="tag tag-secondary"><a href="#">CSS</a></span>
+                  </div>
+                  <h2 class="heading heading-sm font-bold">Estático, dinámico, single-page y JAMstack</h2>
+                </header>
+                <p class="paragraph paragraph-sm font-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <footer>
+                <div class="author">
+                  <img src="https://i.pravatar.cc/300" alt="avatar autor">
+                  <span class="paragraph-xs font-bold">Nombre del autor</span>
+                </div>
+                <span class="reading-time paragraph-xs font-regular">
+                  7 min lectura
+                </span>
+              </footer>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer"></footer>
 </body>
 
 </html>

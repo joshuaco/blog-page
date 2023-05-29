@@ -1,5 +1,10 @@
 @use "tools";
 
+.main-container {
+  @include tools.container-width;
+  padding: var(--container-padding);
+}
+
 .nav-list {
   display: flex;
   align-items: baseline; // typography center 
@@ -26,7 +31,7 @@
   @include tools.desktop {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(460px, auto) minmax(360px, auto);
-    gap: 80px 24px;
+    gap: 60px 24px;
   }
 }
 
@@ -41,4 +46,40 @@
   @include tools.desktop {
     flex-direction: row;
   }
+}
+
+.featured-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 24px 0;
+}
+
+// NOTE: container queries possible case 
+.featured-posts article {
+  height: 530px;
+  width: 100%;
+  background-color: var(--color-aquarius-900);
+}
+
+.featured-posts .button-container {
+  display: flex;
+  gap: 24px;
+}
+
+.featured-posts button {
+  width: 54px;
+  height: 42px;
+  font-size: 0; // Hide text
+  border: none;
+  background-color: var(--color-aquarius-600);
+}
+
+.footer {
+  height: 190px;
+  width: 100%;
+  background-color: var(--color-black-pearl-900);
+  margin-top: 60px;
+  /* margin-bottom: 2px; */
 }
