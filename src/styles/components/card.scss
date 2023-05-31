@@ -37,13 +37,13 @@
 }
 
 // Paragraph/XS/Regular
-.reading-time {
+.help-text {
   color: var(--color-black-pearl-700);
 }
 
 // Card-extended
 @include tools.desktop {
-  .card-extended:nth-child(4n) {
+  .card:nth-child(4n) {
     background-color: var(--color-aquarius-100);
     flex-direction: row;
     grid-column: 1 / 4;
@@ -61,7 +61,7 @@
     }
   }
 
-  .card-extended:nth-child(8n) {
+  .card:nth-child(8n) {
     flex-direction: row-reverse;
   }
 }
