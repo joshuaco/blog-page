@@ -43,7 +43,7 @@
 
 // Card-extended
 @include tools.desktop {
-  .card:nth-child(4n) {
+  .card-extended {
     background-color: var(--color-aquarius-100);
     flex-direction: row;
     grid-column: 1 / 4;
@@ -61,7 +61,7 @@
     }
   }
 
-  .card:nth-child(8n) {
+  .card-reversed {
     flex-direction: row-reverse;
   }
 }
